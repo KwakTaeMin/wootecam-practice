@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lotto.LottoGeneratorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-20T08:32:57" hostname="PC-HMM1100496-1" time="0.116">
+  <properties/>
+  <testcase name="generateLottoTest()" classname="lotto.LottoGeneratorTest" time="0.116"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

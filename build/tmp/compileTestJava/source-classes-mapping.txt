@@ -1,0 +1,10 @@
+lotto/LottoTest.java
+ lotto.LottoTest
+lotto/LottoResultTest.java
+ lotto.LottoResultTest
+lotto/LottoUserTest.java
+ lotto.LottoUserTest
+lotto/LottoGeneratorTest.java
+ lotto.LottoGeneratorTest
+lotto/LottoNumberTest.java
+ lotto.LottoNumberTest

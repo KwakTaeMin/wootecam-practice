@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lotto.LottoUserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-20T08:32:58" hostname="PC-HMM1100496-1" time="0.039">
+  <properties/>
+  <testcase name="createLottoUserTest()" classname="lotto.LottoUserTest" time="0.033"/>
+  <testcase name="buyLottoTest()" classname="lotto.LottoUserTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
