@@ -8,7 +8,7 @@ public class Lotto {
 	public static final int LOTTO_PRICE = 1000;
 	public static final int LOTTO_NUMBER_SIZE = 6;
 
-	private List<LottoNumber> numbers;
+	private final List<LottoNumber> numbers;
 
 	public Lotto(List<LottoNumber> numbers) throws Exception {
 		validate(numbers);

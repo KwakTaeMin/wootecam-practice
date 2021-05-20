@@ -5,7 +5,7 @@ public class LottoNumber implements Comparable<LottoNumber> {
 	public static final int MIN_LOTTO_NUMBER = 1;
 	public static final int MAX_LOTTO_NUMBER = 45;
 
-	private int number;
+	private final int number;
 
 	public LottoNumber(int number) throws Exception {
 		validateNumber(number);
@@ -26,17 +26,15 @@ public class LottoNumber implements Comparable<LottoNumber> {
 		if (!(lottoNumber instanceof LottoNumber)) {
 			return false;
 		}
-		if (((LottoNumber)lottoNumber).getNumber() == this.number) {
-			return true;
-		}
-		return false;
+		return ((LottoNumber)lottoNumber).getNumber() == this.number;
 	}
 
 	@Override
 	public int compareTo(LottoNumber lottoNumber) {
 		if (this.number < lottoNumber.getNumber()) {
 			return -1;
-		} else if (this.number > lottoNumber.getNumber()) {
+		}
+		if (this.number > lottoNumber.getNumber()) {
 			return 1;
 		}
 		return 0;

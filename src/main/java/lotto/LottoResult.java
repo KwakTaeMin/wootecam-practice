@@ -4,41 +4,21 @@ import java.util.List;
 
 public class LottoResult {
 
-	private int threeMatches;
-	private int fourMatches;
-	private int fiveMatches;
-	private int sixMatches;
+	private Lotto winningLotto;
+	private List<Lotto> userLottos;
 
 	public LottoResult(Lotto winningLotto, List<Lotto> userLottos) {
-		this.threeMatches = 0;
-		this.fourMatches = 0;
-		this.fiveMatches = 0;
-		this.sixMatches = 0;
+		this.winningLotto = winningLotto;
+		this.userLottos = userLottos;
 	}
 
-	private void compareLotto(Lotto winningLotto, Lotto userLotto) {
-		int mactchCount = 0;
-		for (LottoNumber userLottoNumber : userLotto.getLottoNumbers()) {
-			if(winningLotto.containNumber(userLottoNumber))
-				mactchCount++;
+	private void compareUserLottos() {
+		for (Lotto userLottoNumber : userLottos) {
+			compareLotto(userLottoNumber);
 		}
-
 	}
 
-	public int getThreeMatches() {
-		return this.threeMatches;
-	}
+	private void compareLotto(Lotto userLotto) {
 
-	public int getFourMatches() {
-		return this.fourMatches;
 	}
-
-	public int getFiveMatches() {
-		return this.fiveMatches;
-	}
-
-	public int getSixMatches() {
-		return this.sixMatches;
-	}
-
 }
