@@ -13,12 +13,15 @@ public class LottoResult {
 	}
 
 	private void compareUserLottos() {
-		for (Lotto userLottoNumber : userLottos) {
-			compareLotto(userLottoNumber);
+		for (Lotto userLotto : userLottos) {
+			compareLotto(userLotto);
 		}
 	}
 
-	private void compareLotto(Lotto userLotto) {
-
+	private void compareLotto(Lotto lotto) {
+		List<LottoNumber> lottoNumbers = lotto.getLottoNumbers();
+		for (LottoNumber lottoNumber : lottoNumbers) {
+			this.winningLotto.containNumber(lottoNumber);
+		}
 	}
 }
